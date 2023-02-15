@@ -4,10 +4,11 @@ s3Repo is a [Repo Plugin](https://github.com/munki/munki/wiki/Repo-Plugins) for 
 
 s3Repo uses the [boto3](https://github.com/boto/boto3) python library.
 
-
 ## Getting Started
 
 **It is assumed that you have basic knowledge of Munki and Amazon S3 before attempting to use this plugin.**
+
+**It's also worth noting that one should invoke `prefsSetter.py` with `/usr/local/munki/munki-python`!
 
 Before you can configure and use the s3Repo plugin you must have an S3 compatible backend, a bucket on the backend, and an account that has read/write permissions to the bucket. It is recommended, though not required, to have a separate bucket for your munki repo. [Amazon S3](https://aws.amazon.com/s3/) is the most popular S3 solution however others exist such as [Minio](https://www.minio.io/), which allows you to stand up your own S3 backend.
 
